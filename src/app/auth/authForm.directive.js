@@ -27,6 +27,13 @@
       email: '',
       password: ''
     };
+    vm.ngModelOptions = {
+      updateOn: 'default blur',
+      debounce: {
+        'default': 1000,
+        'blur': 0
+      }
+    };
   }
 
 })();
